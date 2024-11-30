@@ -53,8 +53,44 @@
   .header-right {
     margin-top: 25px;
   }
+  .pricing-plan-box{
+    row-gap:52px;
+    flex-wrap: wrap;
+  }
+  .pricing-plan-item {
+    width: 50%;
+  }
+  .plan-header p {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .plan-header h4 {
+    font-size: 25px;
+    margin-top: 16px;
+    line-height:40px;
+  }
+  .plan-header img {
+    max-height: 100px;
+    min-height: 100px;
+  }
+  .plan-label {
+    font-size: 14px;
+  }
+  .pricing-plan {
+    padding: 25px;
+    padding-bottom: 60px;
+  }
+  .plan-option ul li {
+    font-size: 15px;
+  }
+  .checked-icon i {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width:767px) {
+  .pricing-plan-item {
+    width:100%;
+  }
   .common-heading-section h3 {
     line-height: 42px;
     font-size: 32px;

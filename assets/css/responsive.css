@@ -1,0 +1,104 @@
+
+@media screen and (min-width:1280px) {
+  .navbar-nav {
+    gap:20px;
+  }
+}
+ 
+@media screen and (max-width:1280px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}
+@media screen and (max-width:1199px) {
+  .common-heading-section h3 {
+    line-height: 58px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ellipse-1 {
+    top: -18%;
+  }
+  .common-heading-section span {
+    font-size: 15px;
+  }
+  .common-heading-section h3 {
+    line-height:50px;
+    font-size: 45px;
+  }
+  .hero-section {
+    padding-top: 70px;
+  }
+  .navbar-nav.mx-auto {
+    margin-left:0px !important;
+  }
+  .nav-item > a{
+    padding: 10px;
+  }
+ 
+  .navbar-collapse {
+    margin-top: 25px;
+  }
+  .header-area {
+     
+    margin-bottom:0px;
+    
+  }
+  .footer {
+    gap: 46px;
+  }
+  .header-right {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width:767px) {
+  .common-heading-section h3 {
+    line-height: 42px;
+    font-size: 32px;
+  }
+  .footer {
+    gap:35px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-item h4 {
+    font-size: 24px;
+  }
+  .footer-subscribe button {
+ 
+    height: 40px;
+    max-width: 40px;
+    min-width: 40px;
+    margin-right: 1px;
+  }
+  .footer-logo img {
+    max-width: 105px;
+  }
+ 
+}
+@media screen and (max-width:480px) {
+  .navbar {
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .footer-bottom{
+    justify-content: center !important;
+  }
+  .header-area {
+    position: sticky;
+    padding: 0px 0;
+    top: 0px;
+    padding-top: 26px;
+  }
+  body{
+    overflow-x: hidden !important;
+  }
+  
+}
+
+
+

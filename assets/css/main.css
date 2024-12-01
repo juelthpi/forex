@@ -54,6 +54,23 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 40px;
   background-color: #110A00;
 }
+.primary-btn-sm{
+  padding:8px 16px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+	text-transform: capitalize;
+  position: relative;
+  z-index: 9;
+  transition: 0.5s;
+  letter-spacing: -3%;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #0F0A05 0%, #140C04 100%);
+}
+ 
 .primary-btn:hover{
   background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
 
@@ -64,7 +81,7 @@ h1,h2,h3,h4,h5,h6{
   transition: 0.5s;
 }
 .secondary-btn:hover{
-  background: transparent;
+  background: #1F1300;
 }
 .primary-btn i,.secondary-btn i{
   font-size: 18px;
@@ -80,6 +97,11 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 700;
   font-size:64px;
 }
+.common-heading-section h2{
+  line-height:60px;
+  font-weight:600;
+  font-size:38px;
+}
 .common-heading-section h4{
   font-size: 48px;
   font-weight: 700;
@@ -89,6 +111,11 @@ h1,h2,h3,h4,h5,h6{
   font-size: 30px;
   font-weight: 600;
   line-height: 45px;
+}
+.common-heading-section h6{
+  font-size:24px;
+  font-weight: 600;
+  line-height:32px;
 }
 .common-heading-section p{
   margin-top:15px;
@@ -179,8 +206,7 @@ h1,h2,h3,h4,h5,h6{
 .line-1{
   height: 2px;
   width: 100%;
-  background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(255, 153, 0, 0.6) 50.31%, rgba(217, 217, 217, 0) 100%);
-  
+  background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(255, 153, 0, 0.4) 50.31%, rgba(217, 217, 217, 0) 100%);
 }
 .line-2{
   height: 1px;
@@ -325,7 +351,7 @@ a.nav-link.dropdown-toggle i{
 	position: sticky;
 	left: 0;
 	right: 0;
-  padding:2px 0;
+  padding:10px 0;
 	top:0px;
 	margin-bottom: -101px;
   z-index: 999;
@@ -351,6 +377,30 @@ a.nav-link.dropdown-toggle i{
   color: #fff;
   transition: 0.5s;
 }
+.white-border-gradient::after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	z-index: -1;
+	border-radius:40px;
+  background:linear-gradient(90deg, #FFFFFF 0%, #4A4A49 100%);
+	border-radius:40px;
+}
+.white-border-gradient:hover::after {
+  background:linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
+}
+.white-border-gradient{
+  background-color: #4B4B4B;
+	position: relative;
+	border: 1px solid transparent;
+	background-clip: padding-box;
+  border-radius:40px;
+  color: #fff;
+  transition: 0.5s;
+}
 
 .card-1-logo{
   height: 90px;
@@ -361,6 +411,7 @@ a.nav-link.dropdown-toggle i{
   justify-content: center;
   align-items: center;
   position: absolute;
+  overflow: hidden;
   left: 0;
   top:-50px;
   transition: 0.5s;
@@ -368,9 +419,18 @@ a.nav-link.dropdown-toggle i{
   margin: auto;
   background: #FF9900;
 }
+ 
+.card-1{
+  cursor: pointer;
+}
 .card-1:hover .card-1-logo{
   border-color: #844F00;
- 
+}
+.card-1-logo img{
+  transition: 0.5s;
+}
+.card-1:hover .card-1-logo img{
+  transform: scale(1.3);
 }
 .mt-80{
   margin-top: 80px;
@@ -479,7 +539,7 @@ a.nav-link.dropdown-toggle i{
   width: 22%;
 }
 .footer{
-  gap:95px;
+  gap:108px;
 }
 .footer-item h4{
   color:#fff;
@@ -492,8 +552,8 @@ a.nav-link.dropdown-toggle i{
 }
 .footer-item ul li a{
   font-size:16px;
-  color:#fff;
-  line-height:40px;
+  color:#FFFFFFC9;
+  line-height:28px;
   display: block;
   font-weight: 400;
   transition: 0.5s;
@@ -566,7 +626,7 @@ a.nav-link.dropdown-toggle i{
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.93) 17.46%, rgba(12, 12, 12, 0.54) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 17.46%, rgba(12, 12, 12, 0.54) 100%);
 }
 .country-select select{
   background-color: #090A0A;
@@ -727,6 +787,7 @@ a.nav-link.dropdown-toggle i{
 }
 .plan-option ul li{
   font-size: 18px;
+  color:#FFFFFFB3 !important;
 }
 .text-d0{
   color:#D02F44;
@@ -957,3 +1018,118 @@ a.nav-link.dropdown-toggle i{
 	right: -1.5px;
   background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
  }
+ .text-gradient-4{
+  background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .blog-post-content p{
+  color:#E2E2E2;
+ }
+ .blog-post-content{
+  margin-top: 12px;
+ }
+ .blog-post-card{
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+ 
+ .blog-card-border-gradient{
+  background:linear-gradient(120deg, #090705 0%, #1B1005 100%);
+	position: relative;
+	border: 1px solid transparent;
+	background-clip: padding-box;
+  border-radius:10px;
+  transition: 0.8s;
+}
+ 
+.blog-card-border-gradient::after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	z-index: -1;
+	border-radius:10px;
+  background:linear-gradient(180deg, rgba(242, 242, 242, 0.2) 0%, rgba(242, 242, 242, 0.066) 100%);
+}
+.blog-post-content p span{
+  padding-right:6px;
+}
+.blog-card-border-gradient:hover::after{
+  background:linear-gradient(143.52deg, #F7C301 -5.39%, rgba(0, 0, 0, 0) 165.23%, rgba(255, 255, 255, 0) 165.23%);
+  top: -2px;
+  bottom: -2px;
+	left: -2px;
+	right: -2px;
+}
+ 
+.blog-card-border-gradient:hover{
+  background:linear-gradient(120deg, #15130E 0%, #352C14 100%);
+  
+}
+ .color-71{
+  color:#717282;
+ }
+ .footer-bottom p{
+  color:#717282;
+ }
+ .footer-bottom p a{
+  color:#F59B20;
+ }
+ .line-3{
+  height: 1px;
+  width: 100%;
+  background: #222222;
+}
+.subscribe-field{
+  height:50px;
+  max-width: 500px;
+  margin: auto;
+}
+.subscribe-form input::placeholder{
+  opacity: 1;
+}
+.subscribe-form input{
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #717282;
+  border-radius: 100px 0 0 100px;
+  padding-left: 30px;
+  height: 100%;
+  margin-right: -5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.subscribe-form button{
+  outline: none;
+  border: none;
+  padding: 0 36px;
+  color:#fff;
+  text-transform: uppercase;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+  border-radius:0px 100px 100px 0px;
+  background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
+}
+.subscribe-form button:hover{
+  background: linear-gradient(0deg, #F7C301 0%, #F47E37 100%);
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.zoom-animation{
+  animation: zoomIn 2s infinite ease-in-out alternate;
+}

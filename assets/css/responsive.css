@@ -3,9 +3,15 @@
   .navbar-nav {
     gap:20px;
   }
+  .footer {
+    gap: 108px;
+  }
 }
  
 @media screen and (max-width:1280px) {
+  .footer {
+    gap:48px;
+  }
   .navbar {
     padding-left: 20px;
     padding-right: 20px;
@@ -19,6 +25,17 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .footer-pagination {
+    width: 24%;
+  }
+  .footer {
+    gap: 46px;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
   .ellipse-1 {
     top: -18%;
   }
@@ -86,8 +103,66 @@
   .checked-icon i {
     font-size: 15px;
   }
+  .mt-100{
+    margin-top: 80px;
+  }
+  .common-heading-section h4 {
+    font-size: 38px;
+    line-height: 54px;
+  }
+  .card-1 h4 {
+    margin-bottom: 12px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .checkout-section{
+    padding: 0;
+  }
+  .checkout-card-header ul li, .checkout-body ul li span, .checkout-card-footer ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .checkout-logo img{
+    max-width:80px;
+     width: 100%;
+  }
+  .funfact-items {
+    padding: 50px 0;
+  }
+  .funfact-item span {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .funfact-items .col-md-6:nth-child(even) .funfact-item:before{
+    display: none;
+  }
+  .common-heading-section h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 @media screen and (max-width:767px) {
+  .common-heading-section h6 {
+    font-size:20px;
+    line-height:28px;
+  }
+  p{
+    font-size: 15px;
+  }
+  .card-1-logo {
+    height: 80px;
+    width: 80px;
+    border:2px solid #FFFFFF;
+  }
+  .card-1 h4 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .common-heading-section h4 {
+    font-size: 28px;
+    line-height: 38px;
+  }
   .pricing-plan-item {
     width:100%;
   }
@@ -114,9 +189,18 @@
   .footer-logo img {
     max-width: 105px;
   }
- 
+  .funfact-items {
+    padding: 10px 0;
+    padding-bottom: 40px;
+  }
+  .funfact-item span {
+    font-size: 28px;
+  }
 }
 @media screen and (max-width:480px) {
+  .funfact-items .col-md-6:nth-child(odd) .funfact-item:before{
+    display: none;
+  }
   .navbar {
     padding-left:0px;
     padding-right:0px;

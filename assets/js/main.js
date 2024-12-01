@@ -32,5 +32,30 @@ jQuery(document).ready(function ($) {
     $(window).on("scroll", function () {
       checkScroll();
     });
-
+    $('.testimonial-slider').slick({
+      slidesToShow:3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots:true,
+      autoplay: true,
+      infinite: true,
+      prevArrow: $('.nav-btn'),
+      nextArrow: $('.nav-btn'),
+      responsive: [
+         
+        {
+          breakpoint:991,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 557,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+      
+      });
 })

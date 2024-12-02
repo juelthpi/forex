@@ -25,9 +25,11 @@
   }
 }
 @media screen and (max-width: 991px) {
-  .footer-pagination {
-    width: 24%;
+  .footer-items{
+    width: 100%;
+    justify-content: space-around;
   }
+ 
   .footer {
     gap: 46px;
     flex-wrap: wrap;
@@ -129,7 +131,7 @@
   .funfact-items {
     padding: 50px 0;
   }
-  .funfact-item span {
+  .funfact-item span,.funfact-item b {
     font-size: 34px;
     line-height: 45px;
   }
@@ -138,6 +140,19 @@
   }
   .common-heading-section h6 {
     font-size: 22px;
+    line-height: 30px;
+  }
+  .ellipse-10{
+    z-index: -2;
+  }
+  .common-page-header {
+    padding-top:60px;
+    padding-bottom:60px;
+    position: relative;
+    z-index: 5;
+  }
+  .common-page-header h3 {
+    font-size: 32px;
     line-height: 30px;
   }
 }
@@ -174,10 +189,9 @@
     gap:35px;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
   }
   .footer-item h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .footer-subscribe button {
  
@@ -193,8 +207,40 @@
     padding: 10px 0;
     padding-bottom: 40px;
   }
-  .funfact-item span {
+  .funfact-item span,.funfact-item b {
     font-size: 28px;
+  }
+  .footer-items {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .footer-item.footer-pagination {
+    width: 50%;
+  }
+  .footer-item ul li a {
+    font-size: 15px;
+  }
+  .footer-bottom{
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .payment-gateway li a {
+    height: 38px;
+    width: 38px;
+  }
+  .payment-gateway{
+    margin-bottom: 20px;
+    order: -2;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .subscribe-form input {
+    padding-left: 15px;
+  }
+  .subscribe-form button {
+    padding: 0 10px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width:480px) {

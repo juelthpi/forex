@@ -686,7 +686,7 @@ a.nav-link.dropdown-toggle i{
 .payment-gateway li,.social-menu li{
   font-weight: 400;
   color: #717282;
-  font-size: 16px;
+  font-size: 18px;
 }
 .payment-gateway li a{
   display: flex;
@@ -711,13 +711,15 @@ a.nav-link.dropdown-toggle i{
   justify-content: center;
 }
 .social-menu li a:hover{
-  background-color:#F47E37;
+  background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
+
 }
 .social-menu li i{
   color:#fff;
 }
 .payment-gateway li a:hover{
-  background-color:#F47E37;
+  background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
+
 }
 .payment-gateway,.social-menu{
   gap: 15px;
@@ -728,6 +730,7 @@ a.nav-link.dropdown-toggle i{
   background-position: center center;
   position: relative;
   z-index: 2;
+  padding-top: 100px;
 }
 .footer-area:after{
   content:"";
@@ -760,6 +763,14 @@ a.nav-link.dropdown-toggle i{
   top: 0;
   z-index: -2;
 }
+.why-choose-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('../images/bg/f.png') center center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  z-index: 9;
+}
+
 .checkout-section{
   background-image:url('../images/bg/f.png');
   background-repeat: no-repeat;
@@ -1258,7 +1269,7 @@ a.nav-link.dropdown-toggle i{
 .zoomout-animation{
   animation: zoomout 3s infinite ease-in-out alternate;
 }
-.extra-ordinary-section::after {
+.extra-ordinary-section::after,.blog-post-details-section:after {
   content: "";
   position: absolute;
   left: 0;
@@ -1442,4 +1453,113 @@ a.nav-link.dropdown-toggle i{
   line-height: 24px;
   color:#fff;
   letter-spacing: -0.03em;
+}
+.info-box-icon img{
+  transition: 0.5s;
+}
+.info-box-icon{
+  min-height:60px;
+  min-width:60px;
+  padding: 10px;
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  max-width: 60px;
+  max-height: 55px;
+}
+.info-box-item:hover .info-box-icon img{
+  transform: scale(1.15);
+}
+.why-choose-infobox:hover .info-box-icon{
+  background-color: #F47E37;
+}
+.why-choose-infobox .common-heading-section p{
+  font-size: 14px;
+}
+.why-choose-infobox .common-heading-section{
+  max-width:505px;
+}
+.why-choose-infobox .info-box-icon{
+  background: #FF9900;
+}
+.info-box{
+  gap: 30px;
+}
+.team-member-section{
+  padding: 100px 0;
+}
+.team-card .social-menu li a{
+  border-width: 2px;
+}
+.team-member-info h6{
+  margin-top: 18px;
+  font-size:28px;
+  font-weight: 600;
+  line-height: 45px;
+
+}
+.team-card {
+	border-radius: 10px;
+	padding: 20px;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+}
+.team-border-gradient.testimonial-border-gradient::after {
+	border-radius: 5px;
+   
+}
+.team-border-gradient.testimonial-border-gradient {
+	border-radius:5px;
+   
+}
+.team-border-gradient.testimonial-border-gradient:hover {
+  background-color: rgba(0, 0, 0, 0.9); 
+}
+.team-member-thumbnail img{
+  transition: 0.5s;
+}
+.team-card:hover .team-member-thumbnail img{
+  transform: scale(1.1);
+}
+.ellipse-17{
+  right: 0%;
+  bottom: 0%;
+}
+.ellipse-19{
+  transform: translateY(0%);
+  opacity:0.8;
+  z-index:9;
+}
+.team-member-section{
+  padding-bottom: 0;
+}
+.post-info ul li i{
+  margin-right:8px;
+}
+.post-info ul li{
+  color:#BFC6D2;
+  margin-left:20px;
+  font-size:18px;
+}
+.listed-box h4{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 52px;
+  color:#fff;
+  margin-bottom: 30px;
+}
+.listed-box ul{
+  display: flex;
+  list-style-type:decimal;
+  gap: 20px;
+  padding-left: 25px;
+  color:#fff;
+  flex-direction: column;
+}
+.ellipse-18{
+  z-index:3;
 }

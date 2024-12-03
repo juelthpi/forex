@@ -158,6 +158,13 @@
   .why-choose-section{
     padding: 0;
   }
+  .common-page-header-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .breadcrumb,.post-author a {
+    justify-content: center !important;
+  }
 }
 @media screen and (max-width:767px) {
   .common-heading-section h6 {

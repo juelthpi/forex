@@ -32,6 +32,7 @@ jQuery(document).ready(function ($) {
     $(window).on("scroll", function () {
       checkScroll();
     });
+   
     $('.testimonial-slider').slick({
       slidesToShow:3,
       slidesToScroll: 1,

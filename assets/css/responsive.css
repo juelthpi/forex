@@ -260,20 +260,23 @@
   .navbar {
     padding-left:0px;
     padding-right:0px;
+    padding-bottom: 30px;
   }
   .footer-bottom{
     justify-content: center !important;
   }
-  .header-area {
+  /* .header-area {
     position: sticky;
     padding: 0px 0;
     top: 0px;
     padding-top: 26px;
-  }
+  } */
   body{
     overflow-x: hidden !important;
   }
-  
+  .header-top-position{
+    top: 50px;
+  }
 }
 
 

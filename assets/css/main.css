@@ -607,25 +607,6 @@ a.nav-link.dropdown-toggle i{
 	right: -1.5px;
   background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
  }
-
-
-/* .checkout-border-gradient{
-  background: linear-gradient(90.12deg, rgba(255, 255, 255, 0.1) -23.55%, rgba(255, 255, 255, 0.055) 120.81%);
-	position: relative;
-	border:1px solid transparent;
-	background-clip: padding-box;
-  transition: 0.5s;
-}
-.checkout-border-gradient::after {
-	content: '';
-	position: absolute;
-	top: -1px;
-	bottom: -1px;
-	left: -1px;
-	right: -1px;
-	z-index: -1;
-  background:linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(247, 183, 11, 0.5) 45.24%, rgba(255, 255, 255, 0.5) 100%);
-} */
 .checkout-card {
 	height: 100%;
 	background: linear-gradient(90.12deg, rgba(255, 255, 255, 0.1) -23.55%, rgba(255, 255, 255, 0.055) 120.81%);
@@ -651,7 +632,7 @@ a.nav-link.dropdown-toggle i{
   padding-top: 67px;
 }
 .footer-logo{
-  width: 22%;
+  width: 25%;
 }
  
 .footer-item h4{
@@ -660,10 +641,10 @@ a.nav-link.dropdown-toggle i{
   font-weight: 700;
   line-height: 33px;
 }
-.footer-item ul li a:hover{
+.footer-item-list li a:hover{
   color: #F47E37;
 }
-.footer-item ul li a{
+.footer-item-list li a{
   font-size:16px;
   color:#FFFFFFC9;
   line-height:28px;
@@ -769,7 +750,7 @@ a.nav-link.dropdown-toggle i{
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
               url('../images/bg/f.png') center center no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding:100px 0;
   z-index: 9;
 }
 
@@ -780,23 +761,6 @@ a.nav-link.dropdown-toggle i{
   z-index: 9;
   background-position: center center;
 }/* Ellipse 73 */
-
-/* .checkout-section:after{
-  content: "";
-  position: absolute;
-  width: 975px;
-  height: 953px;
-  background: #603305;
-  opacity: 0.5;
-  filter: blur(600px);
-
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 50%;
-  z-index: -2;
-  transform: translateY(-50%);
-} */
 .checkout-card-header,.checkout-card-footer{
   background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, rgba(91, 91, 91, 0.33) 50.31%, rgba(217, 217, 217, 0) 100%);
   padding: 15px;
@@ -1333,7 +1297,7 @@ a.nav-link.dropdown-toggle i{
 	border-radius: 10px;
 }
 .footer-items{
-  width: 78%;
+  width: 75%;
   justify-content: space-between;
 }
 .ripple-1,
@@ -1394,7 +1358,7 @@ a.nav-link.dropdown-toggle i{
     opacity: 0;
   }
 }
-.footer-item ul li a i{
+.footer-item-list li a i{
   color: #F47E37;
   font-size: 14px;
   margin-right: 5px;
@@ -1575,7 +1539,7 @@ a.nav-link.dropdown-toggle i{
   box-shadow:  0 0 0 0 transparent;
   background-color: transparent;
 }
-.input input,.input textarea{
+.input input,.input textarea,.input select{
   background-color: transparent;
   border: none;
   outline: none;
@@ -1585,6 +1549,26 @@ a.nav-link.dropdown-toggle i{
   font-size: 14px;
   font-weight: 500;
   border-radius: 1px;
+}select {
+  -webkit-appearance: none; /* For Chrome, Safari, and other WebKit-based browsers */
+  -moz-appearance: none;    /* For Firefox */
+  appearance: none;         /* For modern browsers */
+  background: none;         /* Remove background (optional) */
+  
+}
+.select-option-arrow{
+  position: absolute;
+  right:14px;
+  top: 50%;
+  color:#fff;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input select{
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #000000;
+  
 }
 .form-group.plan-border-gradient{
   border-radius:5px;
@@ -1673,12 +1657,13 @@ a.nav-link.dropdown-toggle i{
   color:#fff;
 }
 .login-form{
-  max-width: 480px;
+  max-width:650px;
   padding:40px 15px;
   border: 1px solid rgb(97, 95, 95);
   margin: 0 auto;
   position: relative;
   border-radius: 10px;
+  z-index: 9;
   box-shadow: rgba(241, 241, 241, 0.35) 0px 5px 15px;
 }
 .login-form::after {
@@ -1690,4 +1675,22 @@ a.nav-link.dropdown-toggle i{
 	width: 95px;
 	background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
 	border-radius:10px 0px 141px 0;
+}
+button,button i{
+  font-size: 18px !important;
+}
+.footer-pagination h4{
+  margin-bottom:45px;
+  position: relative;
+}
+.footer-pagination h4:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  border-radius: 2px;
+  bottom: -15px;
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, #F7C301 0%, #F47E37 100%);
+
 }

@@ -66,3 +66,7 @@ jQuery(document).ready(function ($) {
         time: 1000
     });
 })
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  preloader.classList.add('loader-hide');
+});

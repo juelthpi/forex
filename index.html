@@ -20,6 +20,17 @@
 </head>
 
 <body>
+    <div class="preloader" id="preloader">
+        <div class="trading-loader">
+            <div class="candlesticks">
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+                <div class="candle"></div>
+            </div>
+        </div>
+    </div>
 
    <!-- Header Start-->
    <header class="header-area">
@@ -408,8 +419,84 @@
          </div>
          <div class="row mt-5">
             <div class="col-md-12">
-               <div class="pricing-plan-box d-flex justify-content-center">
+               <div class="pricing-plan-box d-flex justify-content-center flex-wrap">
                   <!-- item -->
+                  <div class="pricing-plan-item plan-border-gradient position-relative">
+                     <div class="plan-hover-shadow text-white text-center">Recommended</div>
+                     <div class="pricing-plan position-relative h-100">
+                        
+                        <div class="plan-header text-center">
+                           <img src="assets/images/icon/silver-plan.png" alt="icon" class="animation-up">
+                           <h4 class="text-gradient-1">Silver</h4>
+                           <p>$78<span> /mo</span></p>
+                        </div>
+                        <div class="line-2 mt-40"></div>
+                        <div class="plan-option mt-40">
+                           <ul class="d-flex flex-column">
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span>Dashboard Signal -  <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span> Whatsapp Alert -  <span class="plan-label text-d0 border-color-d0">No</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span> Telegram Alert -    <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span>  Email Alert -  <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span>  SMS Alert -   <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> All Major Currency Pairs</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> Instant Notification Alerts</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 500+ Profit Pips</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> High Success Rate</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 2-3 Premium Signals Per Day</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 30-Day Moneyback Guarantee</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 500+ Profit Pips</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> Support - 24X7</li>
+                              
+                           </ul>
+                        </div>
+                        <div class="plan-btn">
+                           <div class="border-gradient z-1 d-inline-block">
+                              <button class="primary-btn">Choose Plan <i class="fas fa-arrow-right"></i></button>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  
+                  </div>
+                   <!-- item -->
+                  <div class="pricing-plan-item plan-border-gradient position-relative">
+                     <div class="plan-hover-shadow text-white text-center">Recommended</div>
+                     <div class="pricing-plan position-relative h-100">
+                        
+                        <div class="plan-header text-center">
+                           <img src="assets/images/icon/silver-plan.png" alt="icon" class="animation-up">
+                           <h4 class="text-gradient-1">Silver</h4>
+                           <p>$78<span> /mo</span></p>
+                        </div>
+                        <div class="line-2 mt-40"></div>
+                        <div class="plan-option mt-40">
+                           <ul class="d-flex flex-column">
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span>Dashboard Signal -  <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span> Whatsapp Alert -  <span class="plan-label text-d0 border-color-d0">No</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span> Telegram Alert -    <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span>  Email Alert -  <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i>  </span>  SMS Alert -   <span class="plan-label text-ff border-color-ff">Yes</span></li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> All Major Currency Pairs</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> Instant Notification Alerts</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 500+ Profit Pips</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> High Success Rate</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 2-3 Premium Signals Per Day</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 30-Day Moneyback Guarantee</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> 500+ Profit Pips</li>
+                              <li class="d-flex align-items-center g-10 text-white"><span class="checked-icon"><i class="fas fa-check text-ff"></i></span> Support - 24X7</li>
+                              
+                           </ul>
+                        </div>
+                        <div class="plan-btn">
+                           <div class="border-gradient z-1 d-inline-block">
+                              <button class="primary-btn">Choose Plan <i class="fas fa-arrow-right"></i></button>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  
+                  </div>
+                   <!-- item -->
                   <div class="pricing-plan-item plan-border-gradient position-relative">
                      <div class="plan-hover-shadow text-white text-center">Recommended</div>
                      <div class="pricing-plan position-relative h-100">
